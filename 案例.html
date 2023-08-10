@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+            background-color: pink;
+        }
+
+        div::before {
+            content: "小马";
+            display: block;
+            width: 100%;
+            height: 100%;
+            transform: rotate(180deg);
+            transition: all 0.3s;
+            transform-origin: left bottom;
+            background-color: gold;
+        }
+
+        div:hover::before {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

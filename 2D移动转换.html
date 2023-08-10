@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: translate(50px,50px);
+            /* x,y轴移动 */
+            /* transform: translateX(100px);移动X轴 */
+            /* transform: translateX(50%);相对于宽度移动50% */
+            /* 对行内元素无效  transform移动对其他盒子不影响*/
+        }
+        .box {
+            margin: 100px;
+            width: 200px;
+            height: 200px;
+            transform: translate(50%);
+            /* 百分比是相对于自身宽高来移动 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+    <span>222222</span>
+    <div class="box"></div>
+</body>
+</html>

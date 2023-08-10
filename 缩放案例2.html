@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            margin: 100px auto;
+            width: 250px;
+            height: 250px;
+            background: url(./img/party.jpeg) no-repeat;
+            background-size: 200px;
+        }
+        img {
+            position: absolute;
+            left: 80px;
+            top: 35px;
+            opacity: 0;
+            width: 40px;
+            height: 40px;
+            transition: all 0.5s;
+            transform: scale(10);
+        }
+        div:hover img {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./img/play.png" alt="">
+    </div>
+</body>
+</html>

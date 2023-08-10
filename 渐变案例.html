@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        .box {
+            margin: 100px;
+            overflow: hidden;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-image: url(22.jpg);
+            transition: all 1s;
+        }
+        .box:hover {
+            transform: scale(1.1);
+        }
+        .text {
+            z-index: 1;
+            color: #fff;
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+            transition: all 0.5s;
+        }
+        .mask {
+            opacity: 0;
+            width: 300px;
+            height: 350px;
+            /* background-color: rgba(22, 20, 20, 0.5); */
+            background-image: linear-gradient(
+                transparent,
+                rgba(0,0,0,0.8)
+            );
+            transition: all 0.5s;
+        }
+        a {
+            position: absolute;
+            bottom: 20px;
+            color:rgb(228, 18, 18);
+            text-decoration: none;
+        }
+        .box:hover .text {
+            transform: translateY(-50px);
+        } 
+        .box:hover .mask {
+            opacity: 1;
+            transform: translateY(-50px);
+        }
+        span {
+            color: rgb(26, 19, 19);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="text">清淡的色调，简单的画面</div>
+        <div class="mask">
+             <a href="#">了解更多</a> 
+             <span class="iconfont icon-jiantou"></span>
+            </div>
+    </div>
+</body>
+</html>
